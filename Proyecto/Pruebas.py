@@ -1,5 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import random
+from proyecto import Gol
 
 # ax = plt.axes([0.025, 0.025, 0.95, 0.95], polar=True)
 
@@ -18,6 +20,10 @@ import matplotlib.pyplot as plt
 # #plt.axis('off')
 # plt.show()
 #----------------------------------------------------
-print(np.linalg.norm([1,1]))
+Goles = 0
+for i in range(0,200):
+    exec(open("proyecto.py").read())
+    Goles += Gol
 
-
+print(Goles)
+#------------------------------
